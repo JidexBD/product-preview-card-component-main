@@ -1,0 +1,152 @@
+:root {
+  --bl: hsl(212, 21%, 14%);
+  --gr: hsl(228, 12%, 48%);
+  --cr: hsl(30, 38%, 92%);
+  --w: hsl(0, 0%, 100%);
+  --c1: hsl(158, 36%, 37%);
+  --c2: hsl(158, 42%, 18%);
+
+  /* font */
+  --f1: "Montserrat", sans-serif;
+  --f2: "Fraunces", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--f1);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-color: var(--cr);
+  padding: 10rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--w);
+  border-radius: 16px;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.right {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sub-text {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--gr);
+}
+
+.heading {
+  font-size: 3rem;
+  font-family: var(--f2);
+  color: var(--bl);
+  font-weight: 700;
+}
+
+.text-content {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gr);
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.p-1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--c1);
+}
+
+.p-2 {
+  font-size: 1.6rem;
+  text-decoration: line-through;
+  color: var(--gr);
+}
+
+button {
+  background-color: var(--c1);
+  color: var(--w);
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+button:active,
+button:hover {
+  background-color: var(--c2);
+}
+.icon-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+@media (min-width: 45em) {
+  .container {
+    background-color: var(--cr);
+    padding: 10rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-be;
+    align-items: center;
+    background-color: var(--w);
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 75em) {
+}
+
+@media (min-width: 90em) {
+}
+
+@media (min-width: 110em) {
+}
