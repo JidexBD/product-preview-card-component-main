@@ -133,16 +133,65 @@ button:hover {
   }
 
   .card {
+    width: 800px;
     display: flex;
     flex-direction: row;
-    justify-content: space-be;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--w);
     border-radius: 16px;
   }
+
+  .right {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 50rem;
+  }
+
+  .sub-text {
+    font-size: 2rem;
+  }
+
+  .heading {
+    font-size: 3.8rem;
+  }
+
+  .text-content {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--gr);
+  }
+
+  .p-1 {
+    font-size: 3rem;
+  }
+
+  .p-2 {
+    font-size: 1.8rem;
+  }
+  button {
+    padding: 1.5rem 6rem;
+  }
 }
 
 @media (min-width: 75em) {
+  .right {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+    width: 600px;
+  }
+
+  button {
+    padding: 1.5rem 8rem;
+  }
 }
 
 @media (min-width: 90em) {
