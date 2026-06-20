@@ -126,7 +126,7 @@ button:hover {
 @media (min-width: 45em) {
   .container {
     background-color: var(--cr);
-    padding: 10rem 3rem;
+    padding: 40rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
